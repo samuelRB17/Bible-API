@@ -1,32 +1,22 @@
-import "./styles.css"
 import { useState, useEffect } from 'react'
 import { Link } from "react-router"
 
 
 
-interface Ranking {
-  rank: number
-  contestantName: string
-  points: number
-  matchesPlayed: number
+interface Verses {
+  book_id: number
+  book_name: string
+  chapter: number
+  verse: number
+  text : string
 }
 
-
-
-interface Estadistica {
-  position: number
-  name: string
-  value: number
-  appearances: number
-  contestantName: string
-  statName: string
-}
 
 type FiltroTipo = 'posiciones' | 'goleador' | 'asistencias' | 'amarillas' | 'atajadas'
  const filtros: FiltroTipo[] = ['posiciones', 'goleador', 'asistencias', 'amarillas', 'atajadas']
 
 function Home() {
-  const [ranking, setRanking] = useState<Ranking[]>([]) // es
+  const [verses, setVerses] = useState<Verses[]>([]) // es
   const [title, setTitle] = useState('') // estado de titulo 
   const [estaditicas, setEstadisticas] = useState('')
   const [filtro, setFiltro] = useState<FiltroTipo>('posiciones')
@@ -37,7 +27,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-         const res = await fetch(`https://raw.githubusercontent.com/sdtibata/dataliga/refs/heads/main/${filtro}.json`)
+         const res = await fetch(`https://bible-api.com/daniel%201?single_chapter_book_matching=indifferent`)
         const data = await res.json()
 
         setRanking(data.standings[0].ranking)
