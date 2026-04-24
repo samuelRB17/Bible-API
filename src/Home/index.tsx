@@ -1,6 +1,6 @@
-import "./styles.css"
 import { useState, useEffect } from "react"
 import { Link } from "react-router"
+import "./styles.css"
 
 interface Verse {
   book_id: string
@@ -50,19 +50,20 @@ function Home() {
           <button
             key={libro}
             onClick={() => setFiltro(libro)}
-            className={filtro === libro ? 'activo' : ''}
+            className={filtro === libro ? 'filter-btn active' : 'filter-btn'}
           >
             {libro}
           </button>
         ))}
       </div>
 
-      <input
-        type="text"
-        placeholder="Buscar palabra..."
-        value={busqueda}
-        onChange={(e) => setBusqueda(e.target.value)}
-      />
+     <input
+  type="text"
+  placeholder="Buscar palabra..."
+  value={busqueda}
+  onChange={(e) => setBusqueda(e.target.value)}
+  className="search-bar"
+/>
 
       <h2>{title}</h2>
 

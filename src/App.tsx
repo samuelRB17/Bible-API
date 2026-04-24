@@ -19,14 +19,14 @@ function App() {
           </Link>
 
           <Link to="/Favoritos">
-          fav
+          favoritos
           </Link>
             
             <Link to="/Informativa">
-          info
+          informativa
           </Link>
            <Link to="/Original">
-          Ori
+          Original
           </Link>
           
 

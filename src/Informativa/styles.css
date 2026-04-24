@@ -1,0 +1,67 @@
+/* 🔥 RESET PARA QUITAR BORDES NEGROS */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4e6c8;
+  font-family: 'Georgia', serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.original-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* TARJETA PRINCIPAL */
+.poster {
+  max-width: 1000px;
+  width: 100%;
+  background: #fffaf0;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* TITULO */
+.titulo {
+  font-size: 3.5rem;
+  color: #5a3e1b;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* TEXTO */
+.descripcion {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* CONTENEDOR IMÁGENES */
+.imagenes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* IMÁGENES */
+.imagenes img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* HOVER EFECTO PRO */
+.imagenes img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}

@@ -1,0 +1,70 @@
+.favorites-page {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #f6f1e7; /* crema suave */
+  font-family: Arial, sans-serif;
+}
+
+/* TÍTULO */
+.favorites-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2f2a24;
+}
+
+/* TEXTO VACÍO */
+.empty-text {
+  text-align: center;
+  color: #6b5d50;
+  font-size: 16px;
+}
+
+/* LISTA */
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CARD */
+.favorite-card {
+  background: #fffaf2;
+  border: 1px solid #eadfcd;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* LINK */
+.favorite-link {
+  text-decoration: none;
+  color: #3b352d;
+  font-weight: 600;
+}
+
+.favorite-link:hover {
+  text-decoration: underline;
+}
+
+/* BOTÓN ELIMINAR */
+.delete-btn {
+  background: #6b4f2a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #5a4223;
+}

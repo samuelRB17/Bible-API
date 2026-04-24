@@ -1,5 +1,6 @@
 import { useParams } from "react-router"
 import { useState, useEffect } from "react"
+import "./styles.css"
 
 interface Verse {
   book_name: string
@@ -53,18 +54,24 @@ function Verso() {
   if (!verse) return <p>Cargando...</p>
 
   return (
-    <>
-      <h2>
+  <div className="verse-page">
+
+    <div className="verse-container">
+
+      <h2 className="verse-title">
         {verse.book_name} {verse.chapter}:{verse.verse}
       </h2>
 
-      <p>{verse.text}</p>
+      <p className="verse-text">{verse.text}</p>
 
       <button onClick={guardarFavorito}>
         Guardar en favoritos
       </button>
-    </>
-  )
+
+    </div>
+
+  </div>
+)
 }
 
 export default Verso

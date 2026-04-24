@@ -1,0 +1,22 @@
+.btn-verso {
+  background-color: #8b6f3d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-verso:hover {
+  background-color: #a8844a;
+}
+
+.verso {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+}
