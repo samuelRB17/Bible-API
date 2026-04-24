@@ -3,7 +3,7 @@ import Favoritos from "./Favoritos"
 import Home from "./Home"
 import Informativa from "./Informativa"
 import Original from "./Original"
-import Usuario from "./Usuario"
+import Verso from "./Versiculo"
 import "./App.css"
 
 function App() {
@@ -25,9 +25,6 @@ function App() {
             <Link to="/Informativa">
           info
           </Link>
-            <Link to="/Usuario">
-          Usu
-          </Link>
            <Link to="/Original">
           Ori
           </Link>
@@ -39,9 +36,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Favoritos" element={<Favoritos />} />
           <Route path="/Informativa" element={<Informativa />} />
-          <Route path="/Usuario" element={<Usuario />} />
           <Route path="/Original" element={<Original />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/verso/:libro/:id" element={<Verso />} />
 
         </Routes>
       </Router>
